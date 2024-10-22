@@ -1,0 +1,110 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container for all content */
+  .container {
+    max-width: 700px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header styling */
+  h1 {
+    color: #007acc;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Instructions */
+  p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Input fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007acc;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Result display areas */
+  #result, #memoCalls, #normalCalls, #memoizedCalls, #normalTime, #memoizedTime, #factorialResult {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+    min-height: 30px;
+    text-align: left;
+    white-space: pre-wrap;
+  }
+  
+  /* Section headings */
+  h3 {
+    color: #007acc;
+    margin-top: 20px;
+  }
+  
+  /* Highlighted text in execution time section */
+  #executionTime p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Add fun transitions */
+  button, input {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Small hover effects */
+  input:hover {
+    border-color: #007acc;
+  }
+  
+  
