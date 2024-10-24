@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style> 
+    .blue-box {
+        background-color: blue;
+        color: aliceblue;
+    }
+    #box {
+        background-color: red;
+    }
+
+    .card {
+        border: 2px solid black;
+    }
+
+    .special-card {
+        border: 2px solid #CCCCFF;
+    }
+
+    #card1 {
+        border: 2px solid purple;
+    }
+
+    ul li {
+        color: blue;
+    }
+
+    .special {
+        color: red;
+    }
+
+    .item3 {
+        color: #CCCCFF
+    }
+
+    p {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: blue;
+        color: #CCCCFF;
+        display: inline;
+        border: 2px solid #CCCCFF;
+        margin:10px;
+    }
+    
+    span {
+        background-color: #CCCCFF;
+        display:block;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .box {
+        width: 100px;
+        padding: 20px;
+        border: 5px solid salmon;
+        margin: 10px;
+    }
+
+    .box-sizing-content {
+        width: 150px;
+        padding:20px;
+        border: 5px solid black;
+        margin: 10px;
+        box-sizing: content-box;
+    }
+
+    .box-sizing-border {
+        width: 150px;
+        padding:20px;
+        border: 5px solid greenyellow;
+        margin: 10px; 
+        box-sizing: border-box;
+    }
+
+    </style>
+</head>
+<body>
+    <div id = "box" class="blue-box">Styled Box</div>
+    <div class="card special-card" id="card1">I'm a Card</div>
+
+    <ul>
+        <li>Item 1</li>
+        <li class="special">Item 2</li>
+        <li class="item3">Item 3</li>
+    </ul>
+
+    <p>This is a paragraph block</p>
+    <span>This is an inline element </span>
+
+    <div class="box">Box Model</div>
+    <div class="box-sizing-content">Content-Box Sizing</div>
+    <div class="box-sizing-border">Content-Box Border</div>
+
+    <script>
+        
+    </script>
+    
+</body>
+</html>
