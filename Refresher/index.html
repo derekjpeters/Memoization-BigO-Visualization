@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Refresher</title>
+	</head>
+	<body>
+		<script>
+			let age = 25;
+			const pi = 3.14159;
+
+			const total = age * pi;
+			console.log(total);
+			let x = 10;
+			let y = 3;
+
+			console.log(x + y);
+			console.log(x - y);
+			console.log(x * y);
+			console.log(x / y);
+			console.log(x % y);
+
+			let a = 20;
+			let b = 4;
+
+			console.log(a + b);
+			console.log(a - b);
+			console.log(a * b);
+			console.log(a / b);
+            console.log(a % b);
+
+            function greet(name) {
+                console.log('Hello, ' + name + '!');
+            }
+
+            greet("Derek");
+
+            function calcArea(length, width) {
+                return length * width;
+            }
+
+            console.log(calcArea(5,0));
+
+            function totalPrice(price, quantity) {
+                const taxRate = 0.0925;
+                return (price * quantity) * (1 + taxRate);
+            }
+
+            console.log(totalPrice(10, 3));
+
+            function convertToMins(hours) {
+                return hours * 60;
+            }
+            console.log(convertToMins(2));
+                
+
+            
+		</script>
+	</body>
+</html>
