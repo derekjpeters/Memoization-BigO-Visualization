@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types & If Statements</title>
+</head>
+<body>
+    <script>
+        //String
+        console.log("hello, world")
+        //Number
+        console.log(42,3.14);
+        console.log(typeof("42"));
+        //Boolean
+        console.log(true);
+        //undefined 
+        let string = "42";
+        console.log(typeof(string));
+        console.log(Number(string));
+
+        let fuelLevel = 50; //units
+        let fuelRequired = 40;
+        let lightyears = 10.5;
+        let readyMessage = `Launch sequence activated: ${fuelLevel} is our fuel level`
+
+        if (fuelLevel >= fuelRequired) {
+            console.log(readyMessage)
+        } else {
+            console.log("Insufficient fuel. Please Refuel")
+        }
+
+        console.log("Distance to destination in lightyears " + String(lightyears) + " ly");
+
+        let alienFriendly = false;
+        let statusMessage = alienFriendly ? "Welcome, Aliens" : "Prepare defenses";
+        console.log(statusMessage)
+
+        function detectType(value) {
+            return typeof value;
+        }
+
+        console.log(detectType(true));
+        console.log(detectType("test"));
+        console.log(detectType(42));
+        console.log(detectType(String(42)));
+
+        /*
+        if (condition) {
+            code to run
+        } else if (condition) {
+            code to run
+        } else {
+            code to run if condition is not met
+        }
+
+        */
+
+        let color = "Magenta"
+
+        if (color === "green") {
+            console.log('green');
+        } else if (color === "magenta") {
+            console.log("Color is Magenta")
+        } else {
+            console.log("color is neither green or magenta")
+        }
+
+        function login (username, password) {
+            if (username && password) {
+                console.log("Welcome " + username + "!")
+            } else {
+                console.log("Please enter both username and password")
+            }
+        }
+
+        login("TestUser", "PASSWORD");
+        login("testuser")
+
+        let attemptsLeft = 6;
+        let userGuess = 6;
+        let correctAnswer = 5;
+
+        if (userGuess === correctAnswer) {
+           console.log("you guessed the right answer");
+        } else if (attemptsLeft > 0 && (userGuess >= 4 && userGuess <=6)) {
+            console.log("So Close, Try Again")
+        } else {
+            console.log("out of attempts");
+        }
+
+    </script>
+</body>
+</html>
